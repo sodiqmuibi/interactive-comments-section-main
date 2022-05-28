@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+</head>
+<body>
+  <div class="card-wrapper">
+    <div class="row">
+      <div class="card">
+        <div class="voteCount">
+          <div class="voteUp vote-icon">
+            <img src="images/icon-plus.svg" alt="">          
+          </div>
+          <p class="voteNumber">12</p>
+          <div class="voteDown vote-icon">
+            <img src="images/icon-minus.svg" alt="">
+          </div>
+        </div>
+        <div class="profile">
+          <div class="userAvatar">
+            <img src="images/avatars/image-amyrobson.png" alt="">
+          </div>
+          <p class="userName">amyrobson</p>
+          <p class="date">1 month ago</p>
+          <div class="replyIcon">
+            <div class="reply">
+              <img src="images/icon-reply.svg" alt="">
+              <p>Reply</p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          Impressive! Though it seems the drag feature could be improved. But
+          overall it looks incredible. You've nailed the design and the
+          responsiveness at various breakpoints works really well.
+        </div>
+        <div class="replySection">
+          <div class="replyAvatar">
+            <img src="images/avatars/image-juliusomo.png" alt="">
+          </div>
+          <textarea name="reply"  cols="50" rows="4"></textarea>
+          <button class="btn replyBtn" type="button">Reply</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <div class="voteCount">
+          <div class="voteUp vote-icon">
+            <img src="images/icon-plus.svg" alt="">          
+          </div>
+          <p class="voteNumber">5</p>
+          <div class="voteDown vote-icon">
+            <img src="images/icon-minus.svg" alt="">
+          </div>
+        </div>
+        <div class="profile">
+          <div class="userAvatar">
+            <img src="images/avatars/image-maxblagun.png" alt="">
+          </div>
+          <p class="userName">maxblagun</p>
+          <p class="date">2 weeks ago</p>
+          <div class="replyIcon">
+            <div class="reply">
+              <img src="images/icon-reply.svg" alt="">
+              <p>Reply</p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          Woah, your project looks awesome! How long have you been coding for?
+          I'm still new, but think I want to dive into React as well soon.
+          Perhaps you can give me an insight on where I can learn React?
+          Thanks!
+        </div>
+        <div class="replySection">
+          <div class="replyAvatar">
+            <img src="images/avatars/image-juliusomo.png" alt="">
+          </div>
+          <textarea name="reply"  cols="50" rows="4"></textarea>
+          <button class="btn replyBtn" type="button">Reply</button>
+        </div>
+      </div>
+      <div class="half">
+        <div class="line"></div>
+        <div class="card">
+          <div class="voteCount">
+            <div class="voteUp vote-icon">
+              <img src="images/icon-plus.svg" alt="">
+            </div>
+            <p class="voteNumber">4</p>
+            <div class="voteDown vote-icon">
+              <img src="images/icon-minus.svg" alt="">
+            </div>
+          </div>
+          <div class="profile">
+            <div class="userAvatar">
+              <img src="images/avatars/image-ramsesmiron.png" alt="">
+            </div>
+            <p class="userName">ramsesmirion</p>
+            <p class="date">1 week ago</p>
+          </div>
+          <div class="replyIcon">
+            <div class="reply">
+              <img src="images/icon-reply.svg" alt="">
+              <p>Reply</p>
+            </div>
+          </div>
+          <div class="content">
+            <span class="initial">@maxblagun</span> If you're still new, I'd
+            recommend focusing on the fundamentals of HTML, CSS, and JS before
+            considering React. It's very tempting to jump ahead but lay a
+            solid foundation first.
+          </div>
+          <div class="replySection">
+            <div class="replyAvatar">
+              <img src="images/avatars/image-juliusomo.png" alt="">
+            </div>
+            <textarea name="reply"  cols="50" rows="4"></textarea>
+            <button class="btn replyBtn" type="button">Reply</button>
+          </div>
+        </div>
+      </div>
+      <div class="half">
+        <div class="line"></div>
+        <div class="card">
+          <div class="voteCount">
+            <div class="voteUp vote-icon">
+              <img src="images/icon-plus.svg" alt="">
+            </div>
+            <p class="voteNumber">4</p>
+            <div class="voteDown vote-icon">
+              <img src="images/icon-minus.svg" alt="">
+            </div>
+          </div>
+          <div class="profile">
+            <div class="userAvatar">
+              <img src="images/avatars/image-juliusomo.png" alt="">
+            </div>
+            <p class="userName">juliusomo</p>
+            <p class="date">2 days ago</p>
+          </div>
+          <div class="replyIcon">
+            <div class="reply">
+              <img src="images/icon-reply.svg" alt="">
+              <p>Reply</p>
+            </div>
+          </div>
+          <div class="content">
+            <span class="initial">@ramsesmirion</span> If you're still new, I'd
+            recommend focusing on the fundamentals of HTML, CSS, and JS before
+            considering React. It's very tempting to jump ahead but lay a
+            solid foundation first.
+          </div>
+          <div class="replySection">
+            <div class="replyAvatar">
+              <img src="images/avatars/image-juliusomo.png" alt="">
+            </div>
+             <textarea name="reply"  cols="50" rows="4"></textarea>
+            <button class="btn replyBtn" type="button">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="commentContainer"></div>
+    <div class="row">
+      <div class="commentSection">
+        <div class="commentAvatar">
+          <img src="images/avatars/image-juliusomo.png" alt="">
+        </div>
+        <textarea placeholder="Add a comment" cols="50" rows="4"></textarea>
+        <button class="btn sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+  <div class="module-delete">
+    <div class="inner-module">
+      <h3 class="module-title">Delete comment</h3>
+      <p class="module-text">
+        Are you sure to delete this<br />
+        comment? This will remove comment<br />
+        and can't be undone.
+      </p>
+      <div class="btn-wrapper">
+        <button class="btn btn-cancel">NO, CANCEL</button>
+        <button class="btn btn-delete">YES, DELETE</button>
+      </div>
+    </div>
+  </div>
+<script src="comments-section.js"></script>
+</body>
+</html>
